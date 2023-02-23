@@ -11,7 +11,7 @@ var express = require("express"),
     session = require("express-session"),
     methodOverride = require("method-override");
 
-mongoose.connect("mongodb+srv://waqasarif:treadstone@cluster0.fefb5.mongodb.net/myFirstDatabase?retryWrites=true&w=majority", { useUnifiedTopology: true }
+mongoose.connect("mongodb+srv://waqasarif:dravid@cluster0.hn1lhp7.mongodb.net/Mydata?retryWrites=true&w=majority", { useUnifiedTopology: true }
 				 ,{ useNewUrlParser: true })
       .then(() => console.log(`Database connected`))
       .catch(err => console.log(`Database connection error: ${err.message}`));
@@ -135,6 +135,6 @@ app.get("/:id", function(req, res){
 };
 
 
-app.listen(process.env.PORT || 3027,  function(req, res){
+app.listen(process.env.PORT || 3020,  function(req, res){
 	console.log("server started on")
 });
